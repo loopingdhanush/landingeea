@@ -17,7 +17,7 @@ export default function ResultsShowcase() {
       
      
       <div className="lg:w-1/2 text-center lg:text-left">
-        <h2 className="text-4xl font-bold text-orange-400 mb-4">Outstanding Results</h2>
+        <h2 className="text-4xl font-bold text-orange-500 mb-4">Outstanding Results</h2>
         <p className="text-lg text-gray-700">
           Our students have consistently delivered excellent academic performance in board exams and entrance tests.
         </p>

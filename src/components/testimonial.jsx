@@ -41,7 +41,7 @@ export default function TestimonialSwiper() {
   return (
     <div className="max-w-6xl mx-auto px-6 py-12">
       <div className="text-center mb-10">
-        <h2 className="text-5xl font-bold text-orange-400">Testimonials</h2>
+        <h2 className="text-5xl font-bold text-orange-500">Testimonials</h2>
         <p className="text-2xl text-gray-700 mt-2">Hear from our students</p>
       </div>
 
@@ -100,6 +100,8 @@ export default function TestimonialSwiper() {
 
         
       </Swiper>
+
+      <div className="pb-10"></div>
     </div>
   );
 }

@@ -7,8 +7,8 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 grid-cols-1 max-w-5xl mx-auto space-x-8 ">
 
             <div>
-                <div className="flex flex-row items-center space-x-3">
-                    <img src={logoFull} alt="Easy Exam Academy Logo" className="w-12 mb-4" />
+                <div className="flex flex-col">
+                    <img src={logoFull} alt="Easy Exam Academy Logo" className="w-12 mb-1" />
                     <h1 className="text-white text-2xl font-bold mb-6">Easy Exam Academy</h1>
                 </div>
                 <p className="text-gray-400 mt-2">
@@ -29,8 +29,12 @@ export default function Footer() {
 
             <div>
                 <h3 className="text-white font-semibold mb-3 md:mt-0 mt-3">Contact</h3>
-                <p className="text-sm text-gray-400">Email : admin@easyexamacademy.com</p>
-                <p className="text-sm text-gray-400 mt-1">Phone : +91 7708568206</p>
+                <p className="text-sm text-gray-400">
+                    Email: <a href="mailto:admin@easyexamacademy.com" className="hover:underline text-white-500 hover:text-white">admin@easyexamacademy.com</a>
+                    </p>
+                    <p className="text-sm text-gray-400 mt-1">
+                    Phone: <a href="tel:+917708568206" className="hover:underline text-white-500 hover:text-white">+91 77085 68206</a>
+                    </p>
                 <p className="text-sm text-gray-400 mt-1">Location : Erode, India</p>
             </div>
 

@@ -3,6 +3,9 @@ import Hero from "./components/Hero";
 import TestimonialScroller from "./components/testimonial";
 import ResultsShowcase from "./components/result";
 import Footer from "./components/footer";
+import Course from "./components/course";
+import About from "./components/about";
+import Final from "./components/final";
 
 function App() {
   return (
@@ -11,7 +14,11 @@ function App() {
       <Hero />
       <ResultsShowcase />
       <TestimonialScroller />
+      <Course />
+      <About />
+      <Final/>
       <Footer/>
+      
     </div>
   );
 }
