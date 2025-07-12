@@ -11,7 +11,7 @@ export default function Hero() {
         <span className="text-sm text-gray-800 mb-2 inline-block">
   Trusted highly by <span className="font-semibold">100+</span> learners and families</span>
 
-      <h1 className="font-body text-4xl md:text-6xl font-bold text-gray-900 max-w-3xl mb-4 mx-auto">
+      <h1 className="font-heading text-4xl md:text-6xl font-bold text-gray-900 max-w-3xl mb-4 mx-auto">
         Enhance learning with dynamic online tutoring classes
       </h1>
 

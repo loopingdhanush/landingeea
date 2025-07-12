@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import TestimonialScroller from "./components/testimonial";
 import ResultsShowcase from "./components/result";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <ResultsShowcase />
       <TestimonialScroller />
+      <Footer/>
     </div>
   );
 }

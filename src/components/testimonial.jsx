@@ -7,28 +7,35 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-const testimonials = [
+const testimonials1 = [
   {
-    name: "Anuradha Nithyanandh",
-    text: "Highly recommend! The tutors explain concepts at the right time and are very interactive. They help students understand strengths and prepare early for senior classes.",
+    name: "Jyotiraditya Cheemakurthi",
+    text: "Actions speak louder than words. Beginning in 12th grade, I failed physics on my first unit exam, but at the end of the year, I had achieved 95/100 in boards, and the credit goes to Easy Exam Academy.",
   },
   {
-    name: "SHREEMAN V",
-    text: "Innovative teaching and dedication. The passion for education shows in their method and communication. They truly motivate and build student confidence.",
+    name: "Mohan Nivash J A",
+    text: "A wonderful learning platform for IIT-JEE aspirants, concepts are explained in simple ways - both practically and theoretically. Well constructed mock tests and question banks are provided, which trains each and every student for competitive exams. Definitely a worthy institution for students to learn and live successfully!",
   },
   {
     name: "Suganth Gopinath Sangeetha",
-    text: "Awesome teaching and guidance! Loved Vijay sir's humorous and engaging teaching style. Most recommended!",
+    text: "Vijay sir explains every concept clearly and never misses a single doubt—he’s extremely supportive. Thanks to his guidance and the regular practice tests at the academy, I scored 97 in Math and 95 in Science in my Class 10 board exams. I used to be an average student in Science, but this academy really helped me improve.",
   },
   {
-    name: "Yasvini",
-    text: "The classes helped me score 97 in Math and 95 in Science. Very clear teaching and supportive atmosphere. Truly thankful!",
+    name: "Hemapriya D",
+    text: "I am really satisfied with the coaching. Will definitely recommend for others who wish to appear for JEE. The real time examples used while explaining the concepts has really helped the students. Very approachable for any doubts.",
   },
   {
-    name: "Pavithra N",
-    text: "Joined from 9th to NEET prep. Physics became my favorite subject thanks to real-life examples. Great revision tools and amazing support!",
+    name: "Bhanupriya Srinivasan",
+    text: "Mr. Vijay Anand has good empathy with the students he teaches, motivational. The students continue their relationship with him in a long run. Within 15 days he was able to instill what my son has to learn for JEE advanced. Any student getting tutored by him will be thankful to him.",
+  },
+  {
+    name: "Phani M V S",
+    text: "Easy Exam Academy's comprehensive curriculum covers all the necessary topics for NEET, JEE, and CBSE exams. The study materials provided are well-structured and meticulously curated, ensuring that students receive a thorough understanding of each subject.",
   },
 ];
+
+const testimonials2 = [...testimonials1].reverse();
+
 
 export default function TestimonialSwiper() {
   return (
@@ -49,14 +56,15 @@ export default function TestimonialSwiper() {
           1024: { slidesPerView: 3 },
         }}
       >
-        {testimonials.map((t, index) => (
+        {testimonials1.map((t, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white rounded-xl shadow-md p-6 mt-10 mb-4 h-40">
-              <p className="text-gray-700 text-sm italic">"{t.text}"</p>
-
-              <div className="mt-4 text-sm font-semibold text-gray-900">
-                — {t.name}
+            <div className="bg-white rounded-xl shadow-md p-5 mt-10 mb-4 h-50">
+              <div className="text-sm font-semibold text-gray-900">
+                {t.name}
               </div>
+              <p className="text-gray-700 text-sm italic mt-1">"{t.text}"</p>
+
+              
 
             </div>
           </SwiperSlide>
@@ -76,14 +84,15 @@ export default function TestimonialSwiper() {
           1024: { slidesPerView: 3 },
         }}
       >
-        {testimonials.map((t, index) => (
+        {testimonials2.map((t, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white rounded-xl shadow-md p-6 mb-1 h-40">
-              <p className="text-gray-700 text-sm italic">"{t.text}"</p>
-
-              <div className="mt-4 text-sm font-semibold text-gray-900">
-                — {t.name}
+            <div className="bg-white rounded-xl shadow-md p-5 mb-4 h-50">
+              <div className="text-sm font-semibold text-gray-900">
+                {t.name}
               </div>
+              <p className="text-gray-700 text-sm italic mt-1">"{t.text}"</p>
+
+              
 
             </div>
           </SwiperSlide>

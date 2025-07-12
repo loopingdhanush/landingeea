@@ -7,17 +7,13 @@ export default function Navbar() {
 
   return (
     <>
-      
-      {isOpen && (
-  <div
-    className="fixed inset-0 bg-black/50 backdrop-blur-sm z-49"
-    onClick={() => setIsOpen(false)}
-  />
-)}
+    {isOpen && (
+      <div
+        className="fixed inset-0 bg-black/50 backdrop-blur-sm z-49"
+        onClick={() => setIsOpen(false)}
+      />
+    )}
 
-
-
-      
       <div className="fixed top-0 left-0 w-full z-48 bg-white shadow-md px-4 py-2">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
           
@@ -54,6 +50,8 @@ export default function Navbar() {
         </div>
       </div>
 
+    {"Mobile Menu"}
+
       <div className={`fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 z-50`}>
         <div className="p-6 space-y-4">
           <button onClick={() => setIsOpen(false)} className="mb-4">
@@ -75,7 +73,7 @@ export default function Navbar() {
       </div>
 
     
-      <div className="h-20"></div>
+      <div className="h-10"></div>
     </>
   );
 }
