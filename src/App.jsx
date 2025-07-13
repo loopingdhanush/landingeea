@@ -13,11 +13,12 @@ function App() {
     <div className="bg-gradient-to-br from-orange-100 to-white min-h-screen">
       <Navbar />
       <Hero />
+      <About />
       <ResultsShowcase />
       <TestimonialScroller />
       <Course />
       <Instagram />
-      <About />
+      
       <Final/>
       <Footer/>
       
