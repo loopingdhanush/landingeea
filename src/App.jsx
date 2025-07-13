@@ -5,6 +5,7 @@ import ResultsShowcase from "./components/result";
 import Footer from "./components/footer";
 import Course from "./components/course";
 import About from "./components/about";
+import Instagram from "./components/instagram";
 import Final from "./components/final";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <ResultsShowcase />
       <TestimonialScroller />
       <Course />
+      <Instagram />
       <About />
       <Final/>
       <Footer/>

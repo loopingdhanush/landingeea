@@ -12,7 +12,7 @@ export default function Navbar() {
         className="fixed inset-0 bg-black/50 backdrop-blur-sm z-49"
         onClick={() => setIsOpen(false)}
       />
-    )}
+    )}  
 
       <div className="fixed top-0 left-0 w-full z-48 bg-white shadow-md px-4 py-2">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
