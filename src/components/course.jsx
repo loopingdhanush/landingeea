@@ -10,7 +10,7 @@ export default function Course(){
         <h2 className="text-4xl font-bold text-orange-500 text-center max-w-2xl mx-auto">
             Explore our comprehensive Course Offerings
         </h2>
-        <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mt-4 mb-4">
+        <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mt-8 mb-8">
             Our courses are designed to help students excel in their academic pursuits. From <strong>board exams to competitive entrance tests,</strong> our courses are tailored to meet the diverse needs of students
         </p>
 

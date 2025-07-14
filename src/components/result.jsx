@@ -13,7 +13,7 @@ const instagramResults = [
 
 export default function ResultsShowcase() {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col lg:flex-row items-center gap-10">
+    <div className="max-w-6xl mx-auto px-6 py-12 flex flex-col lg:flex-row items-center gap-10">
       
      
       <div className="lg:w-1/2 text-center lg:text-left">

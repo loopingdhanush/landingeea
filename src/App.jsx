@@ -7,6 +7,7 @@ import Course from "./components/course";
 import About from "./components/about";
 import Instagram from "./components/instagram";
 import Final from "./components/final";
+import Why from "./components/why";
 
 function App() {
   return (
@@ -17,11 +18,10 @@ function App() {
       <ResultsShowcase />
       <TestimonialScroller />
       <Course />
+      <Why/>
       <Instagram />
-      
       <Final/>
       <Footer/>
-      
     </div>
   );
 }
