@@ -35,7 +35,7 @@ export default function ResultsShowcase() {
           breakpoints={{
           0: { slidesPerView: 1 },
           640: { slidesPerView: 1 },
-          768: { slidesPerView: 1 },
+          768: { slidesPerView: 2 },
           1024: { slidesPerView: 2 },
             }}
           autoplay={{ delay: 3000 }}

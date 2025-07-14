@@ -14,7 +14,7 @@ export default function Course(){
             Our courses are designed to help students excel in their academic pursuits. From <strong>board exams to competitive entrance tests,</strong> our courses are tailored to meet the diverse needs of students
         </p>
 
-        <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
 
             
 
