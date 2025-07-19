@@ -66,7 +66,7 @@ export default function Navbar() {
           </button>
 
           <a href="https://easyexamacademy.com/blog/" className="block font-medium">Blog</a>
-          <Link to="/Resources" className="font-medium">Resources</Link>
+          <Link to="/Resources" className="block font-medium"  onClick={() => setIsOpen(false)}>Resources</Link>
           <a href="https://easyexamacademy.com/contact/" className="block font-medium">Contact</a>
           <hr />
           <a href="https://attendance.easyexamacademy.com/" className="block text-sm font-semibold rounded-full bg-orange-300 py-2 px-4 text-center">Attendance</a>
