@@ -1,6 +1,8 @@
 import { useState } from "react";
 import logoFull from "../assets/logo_full.png";
 import logoFont from "../assets/logo_font.png";
+import { Link } from "react-router-dom";
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,14 +20,14 @@ export default function Navbar() {
         <div className="max-w-5xl mx-auto flex items-center justify-between">
           
           <div className="flex items-center">
-            <img src={logoFull} className="h-10 rounded-full pr-2" alt="Logo" />
+            <a href="/"><img src={logoFull} className="h-10 rounded-full pr-2" alt="Logo" /></a>
             <img src={logoFont} className="h-5 pr-2" alt="Font Logo" />
           </div>
 
           
           <div className="hidden md:flex items-center space-x-4">
             <a href="https://easyexamacademy.com/blog/" className="font-medium">Blog</a>
-            <a href="https://easyexamacademy.com/resources/" className="font-medium">Resources</a>
+            <Link to="/Resources" className="font-medium">Resources</Link>
             <a href="https://easyexamacademy.com/contact/" className="font-medium">Contact</a>
           </div>
 

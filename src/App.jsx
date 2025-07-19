@@ -1,29 +1,27 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import TestimonialScroller from "./components/testimonial";
-import ResultsShowcase from "./components/result";
-import Footer from "./components/footer";
-import Course from "./components/course";
-import About from "./components/about";
-import Instagram from "./components/instagram";
-import Final from "./components/final";
-import Why from "./components/why";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
+
+import Navbar from "./landing_components/Navbar";
+import Landing from "./landing";
+import Resources from "./resources";
+
 
 function App() {
   return (
-    <div className="bg-gradient-to-br from-orange-100 to-white min-h-screen">
-      <Navbar />
-      <Hero />
-      <About />
-      <ResultsShowcase />
-      <TestimonialScroller />
-      <Course />
-      <Why/>
-      <Instagram />
-      <Final/>
-      <Footer/>
-    </div>
+    <Router>
+      <div className="bg-gradient-to-br from-orange-200 to-white min-h-screen">
+        <Navbar />
+          <Routes>
+            <Route path="/" element={<Landing/>}></Route>
+            <Route path="/Resources" element={<Resources/>}></Route>
+          </Routes>
+      </div>
+    </Router>
   );
 }
+
 
 export default App;
