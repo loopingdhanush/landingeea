@@ -30,7 +30,7 @@ export default function Why() {
         <div className="grid grid-cols-1 md:grid-cols-2 my-16 lg:space-x-8 ">
             <div className="order-1 md:order-2 flex flex-col justify-center text-right mb-6 md:mb-0 ">
                 <h2 className="text-2xl font-bold text-gray-800 mb-4">MCQ Test & Class Platform</h2>
-                <p className="text-gray-600 mb-6 ">An online platform for MCQ practice, performance tracking, and class scheduling. everything in one place.</p>
+                <p className="text-gray-600 mb-6 ml-8">An online platform for MCQ practice, performance tracking, and class scheduling. everything in one place.</p>
             </div>
             <img src={v2} alt="Live Classes" className="w-full h-auto rounded-lg shadow-xl order-2 md:order-1"/>
         </div>

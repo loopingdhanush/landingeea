@@ -17,7 +17,7 @@ export default function Navbar() {
     )}  
 
       <div className="fixed top-0 left-0 w-full z-48 bg-white shadow-md px-4 py-2">
-        <div className="max-w-5xl mx-auto flex items-center justify-between">
+        <div className=" mx-auto flex items-center justify-between">
           
           <div className="flex items-center">
             <a href="/"><img src={logoFull} className="h-10 rounded-full pr-2" alt="Logo" /></a>
@@ -33,8 +33,8 @@ export default function Navbar() {
 
           
           <div className="hidden md:flex items-center space-x-3">
-            <a href="https://attendance.easyexamacademy.com/" className="text-sm font-semibold rounded-full bg-orange-300 py-2 px-4">Attendance Portal</a>
-            <a href="https://study.easyexamacademy.com/" className="text-sm font-semibold rounded-full bg-black text-white px-4 py-2">Students Portal</a>
+            <a href="https://attendance.easyexamacademy.com/" className="text-sm font-semibold rounded-full bg-orange-300 py-2 px-4">Attendance</a>
+            <a href="https://study.easyexamacademy.com/" className="text-sm font-semibold rounded-full bg-black text-white px-4 py-2">Students Login</a>
           </div>
 
           

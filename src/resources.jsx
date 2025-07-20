@@ -5,11 +5,17 @@ export default function Resources(){
     return(
         <section>
             <div className="mx-auto px-4 py-4 mt-12 max-w-6xl">
-                <div className="bg-white p-6 rounded-lg shadow-lg mb-8 flex flex-row items-center">
-                    <img src={logo} alt="logo" className="md:w-20 w-10 mr-8" />
-                    <h1 className="text-4xl font-bold mb-2 ">Educational Resources</h1>
+                <div className="bg-white p-8 rounded-xl shadow-2xl mb-10 flex flex-row items-center border-2 border-orange-200">
+                    <div className="flex items-center justify-center bg-white bg-opacity-80 rounded-full  shadow-md mr-8">
+                        <img src={logo} alt="logo" className="md:w-20 w-12" />
+                    </div>
+                    <div>
+                        <h1 className="md:text-5xl text-4xl font-bold mb-0 drop-shadow kollektif-font">Educational Resources</h1>
+                        <p className="text-base text-gray-500 mt-2 font-medium">Explore quality guides, learning tools, and more below.</p>
+                    </div>
                 </div>
-            
+
+                
                 <h2 className="text-3xl font-semibold mb-8">Doubth Sheets</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
