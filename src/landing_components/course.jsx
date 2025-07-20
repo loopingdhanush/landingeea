@@ -7,7 +7,7 @@ export default function Course(){
     return (
     <section>
         <div className="mx-4">
-        <h2 className="text-4xl font-bold text-orange-500 text-center max-w-2xl mx-auto">
+        <h2 className=" kollektif-font text-4xl font-bold text-orange-500 text-center max-w-2xl mx-auto">
             Explore our comprehensive Course Offerings
         </h2>
         <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mt-8 mb-8">
@@ -21,7 +21,7 @@ export default function Course(){
                 <div>
                     
                     <img src={Book} alt="Book Icon" className="w-16 h-16 mx-auto mb-4"/>
-                    <h3 className="text-2xl text-orange-400 font-bold text-center mb-4">Class 10 to 12 Board Exam Preparation</h3>
+                    <h3 className="text-2xl text-orange-400 font-bold text-center mb-4 kollektif-font">Class 10 to 12 Board Exam Preparation</h3>
                     <p className="text-gray-700 mb-4 text-center">
                     Comprehensive coaching for Class 10 to 12 board exams with a focus on Mathematics and Science.
                     </p>
@@ -29,7 +29,7 @@ export default function Course(){
 
                 <div>
                     <img src={Brain} alt="Brain Icon" className="w-16 h-16 mx-auto mb-4" />
-                    <h3 className="text-2xl text-orange-400 font-bold text-center mb-4">JEE Mains, Advanced & NEET UG Preparation</h3>
+                    <h3 className="text-2xl text-orange-400 font-bold text-center mb-4 kollektif-font">JEE Mains, Advanced & NEET UG Preparation</h3>
                     <p className="text-gray-700 mb-4 text-center">
                     Intensive coaching for JEE and NEET with expert faculty, mock tests, and personalized guidance.
                     </p>
@@ -37,7 +37,7 @@ export default function Course(){
 
                 <div>
                     <img src={graduationcap} alt="Brain Icon" className="w-16 h-16 mx-auto mb-4" />
-                    <h3 className="text-2xl text-orange-400 font-bold text-center mb-4">College Competitive Exam Support</h3>
+                    <h3 className="text-2xl text-orange-400 font-bold text-center mb-4 kollektif-font">College Competitive Exam Support</h3>
                     <p className="text-gray-700 mb-4 text-center">
                     Focused preparation for entrance exams with structured curriculum and real-time assessments.
                     </p>

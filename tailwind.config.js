@@ -4,8 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['"Kollektif"', 'sans-serif'], // must be quoted
-        body: ['"Open Sans"', 'sans-serif'],
+        kollektif: ['Kollektif', 'Open Sans', 'Arial', 'sans-serif'],
       },
     },
   },

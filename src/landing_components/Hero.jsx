@@ -1,19 +1,16 @@
-
 import React from "react";
 import logoFull from "../assets/logo_full.png";
-import '../fonts.css';
 
 
 export default function Hero() {
   return (
 
-    
     <section className="py-10 px-6 text-center">
         <img className="w-20 m-auto mb-10 animate-pulse" src={logoFull}></img>
-        <span className=" text-sm text-gray-800 mb-2 inline-block">
+        <span className=" text-sm text-gray-800 mb-2 inline-block ">
   Trusted highly by <span className="font-semibold">100+</span> learners and families</span>
 
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 max-w-3xl mb-4 mx-auto ">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 max-w-3xl mb-4 mx-auto kollektif-font">
   Enhance learning with dynamic online tutoring classes
 </h1>
 
