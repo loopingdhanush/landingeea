@@ -42,7 +42,7 @@ export default function TestimonialSwiper() {
     <div className="max-w-6xl mx-auto px-6 py-12">
       <div className="text-center mb-10">
         <h2 className="text-5xl font-bold text-orange-500 kollektif-font">Testimonials</h2>
-        <p className="text-2xl text-gray-700 mt-2">Hear from our students</p>
+        <p className="text-2xl text-gray-900 dark:text-orange-100 mt-2 ">Hear from our students</p>
       </div>
 
       <Swiper
@@ -58,11 +58,11 @@ export default function TestimonialSwiper() {
       >
         {testimonials1.map((t, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white rounded-xl shadow-md p-5 mt-10 mb-4 min-h-[12.5rem] md:min-h-[8rem]">
-              <div className="text-sm font-semibold text-gray-900">
+            <div className="bg-white dark:bg-gray-950 border-solid border-2 border-orange-300 rounded-xl shadow-md p-5 mt-10 mb-4 min-h-[6remrem] md:min-h-[8rem]">
+              <div className="text-sm font-semibold text-gray-900 dark:text-orange-100">
                 {t.name}
               </div>
-              <p className="text-gray-700 text-sm italic mt-1 line-clamp-5">"{t.text}"</p>
+              <p className="text-gray-900 dark:text-orange-100 text-sm italic mt-1 line-clamp-5">"{t.text}"</p>
             </div>
 
           </SwiperSlide>
@@ -84,11 +84,11 @@ export default function TestimonialSwiper() {
       >
         {testimonials2.map((t, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white rounded-xl shadow-md p-5 mb-4 min-h-[12.5rem] md:min-h-[8rem]">
-              <div className="text-sm font-semibold text-gray-900">
+            <div className="bg-white dark:bg-gray-950 border-solid border-2 border-orange-300 rounded-xl shadow-md p-5 mb-4 min-h-[6rem] md:min-h-[8rem]">
+              <div className="text-sm font-semibold text-gray-900 dark:text-orange-100">
                 {t.name}
               </div>
-              <p className="text-gray-700 text-sm italic mt-1 line-clamp-5">"{t.text}"</p>
+              <p className="text-gray-900 dark:text-orange-100 text-sm italic mt-1 line-clamp-5">"{t.text}"</p>
 
               
 
