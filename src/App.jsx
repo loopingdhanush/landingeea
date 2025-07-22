@@ -12,7 +12,7 @@ import Resources from "./resources";
 function App() {
   return (
     <Router>
-      <div className="bg-gradient-to-br from-orange-200 to-white min-h-screen">
+      <div className="dark:bg-black bg-gradient-to-br from-orange-200 to-white min-h-screen w-full">
         <Navbar />
           <Routes>
             <Route path="/" element={<Landing/>}></Route>

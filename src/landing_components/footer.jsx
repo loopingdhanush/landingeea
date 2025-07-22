@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-black py-10 px-6">
         
-        <div className="grid md:grid-cols-2 grid-cols-1 max-w-5xl mx-auto space-x-8 ">
+        <div className="grid md:grid-cols-2 grid-cols-1 max-w-5xl mx-auto md:gap-x-8 ">
 
             <div>
                 <div className="flex flex-col">

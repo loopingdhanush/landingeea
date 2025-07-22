@@ -16,7 +16,7 @@ export default function Navbar() {
       />
     )}  
 
-      <div className="fixed top-0 left-0 w-full z-48 bg-white shadow-md px-4 py-2">
+      <div className="z-50 fixed top-0 left-0 w-full z-48 bg-white shadow-md px-4 py-2">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           
           <div className="flex items-center">
