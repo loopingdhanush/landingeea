@@ -3,6 +3,9 @@ import logoFull from "../assets/logo_full.png";
 import logoFont from "../assets/logo_font.png";
 import { Link } from "react-router-dom";
 
+import lighticon from "../assets/lightmode.svg"
+import darkicon  from  "../assets/darkmode.svg"
+
 export default function Navbar() {
  
   const [darkMode, setDarkMode] = useState(() => {
@@ -34,7 +37,7 @@ export default function Navbar() {
       <div className="z-50 fixed top-0 left-0 right-0 w-full z-48 bg-white dark:bg-gray-900 shadow-md px-4 py-2 ring-1 ring-orange-200 dark:ring-gray-800 text-black dark:text-white transition-colors">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
 
-         {/* Desktop Menu */}
+       
           <div className="flex items-center">
             <a href="/">
               <img src={logoFull} className="h-10 rounded-full pr-2" alt="Logo" />
@@ -52,16 +55,20 @@ export default function Navbar() {
 
           
           <div className="hidden lg:flex items-center space-x-3">
-            <a href="https://attendance.easyexamacademy.com/" className="text-orange-500 text-sm font-bold border-solid border-2 border-orange-500 rounded-2xl dark:bg-grey-800 py-2 px-4">Attendance</a>
-            <a href="https://study.easyexamacademy.com/" className="text-sm font-semibold border-solid border-2 border-gray-800 dark:border-white rounded-2xl text-black dark:text-white px-4 py-2">Students Login</a>
+            <a href="https://attendance.easyexamacademy.com/" className="text-orange-500 text-sm font-bold border-solid border-2 border-orange-500 rounded-2xl dark:bg-grey-800 py-2 px-4 hover:bg-orange-100 dark:hover:bg-gray-800">Attendance</a>
+            <a href="https://study.easyexamacademy.com/" className="text-sm font-semibold border-solid border-2 border-gray-800 dark:border-white rounded-2xl text-black dark:text-white px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800">Students Login</a>
 
             
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className="ml-2 p-2 rounded-full "
+              className="ml-2 py-2 px-2 rounded-2xl border-solid border-2 border-gray-800 dark:border-white rounded-2xl text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
               title="Toggle dark mode"
             >
-              {darkMode ? "☀️" : "🌙"}
+               <img
+    src={darkMode ? lighticon : darkicon}
+    alt={darkMode ? "Light Mode" : "Dark Mode"}
+    className="w-6 h-6"
+  />
             </button>
           </div>
 
@@ -77,7 +84,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+
       <div className={`fixed top-0 left-0 w-64 h-full bg-white dark:bg-gray-800 text-black dark:text-white shadow-lg transform ${isOpen ? "translate-x-0" : "-translate-x-full"} transition-transform duration-300 z-50`}>
         <div className="p-6 space-y-4">
           <button onClick={() => setIsOpen(false)} className="mb-4">
@@ -95,14 +102,17 @@ export default function Navbar() {
           <a href="https://study.easyexamacademy.com/" className="block text-sm font-semibold rounded-full font-medium dark:bg-white bg-black text-white dark:text-black py-2 px-4 text-center">Students Login</a>
 
           
-          <button
-            onClick={() => {
-              setDarkMode(!darkMode);
-            }}
-            className="block w-full mt-4 text-center py-2 rounded-full bg-gray-200 dark:bg-gray-700"
-          >
-            {darkMode ? "☀️ Light Mode" : "🌙 Dark Mode"}
-          </button>
+           <button
+              onClick={() => setDarkMode(!darkMode)}
+              className="ml-2 py-2 px-2 rounded-2xl border-solid border-2 border-gray-800 dark:border-white rounded-2xl text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-800"
+              title="Toggle dark mode"
+            >
+               <img
+    src={darkMode ? lighticon : darkicon}
+    alt={darkMode ? "Light Mode" : "Dark Mode"}
+    className="w-6 h-6"
+  />
+            </button>
         </div>
       </div>
 
