@@ -13,11 +13,11 @@ export default function Landing() {
     <div >
       <Hero />
       <About />
+      <Instagram />
       <ResultsShowcase />
       <TestimonialScroller />
       <Course />
       <Why/>
-      <Instagram />
       <Final/>
       <Footer/>
     </div>

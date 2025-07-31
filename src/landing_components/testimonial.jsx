@@ -42,7 +42,7 @@ export default function TestimonialSwiper() {
     <div className="max-w-6xl mx-auto px-6 py-12">
       <div className="text-center mb-10">
         <h2 className="text-5xl font-bold text-orange-500 kollektif-font">Testimonials</h2>
-        <p className="text-2xl text-gray-900 dark:text-orange-100 mt-2 ">Hear from our students</p>
+        <p className="text-2xl text-gray-900 dark:text-orange-100 mt-2 kollektif-font">Hear from our students</p>
       </div>
 
       <Swiper

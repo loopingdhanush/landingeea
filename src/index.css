@@ -20,3 +20,20 @@
   font-family: 'Kollektif', 'Open Sans', Arial, sans-serif;
 }
 
+@font-face {
+  font-family: 'futura';
+  src: url('/fonts/FuturaStd-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futura';
+  src: url('/fonts/FuturaStd-Medium.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.futura-font {
+  font-family: 'futura', 'Open Sans', Arial, sans-serif;
+}

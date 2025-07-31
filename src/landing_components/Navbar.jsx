@@ -16,6 +16,16 @@ export default function Navbar() {
 
   const [isOpen, setIsOpen] = useState(false);
 
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  useEffect(() => {
+  function handleClickOutside(event) {
+    if (!event.target.closest(".relative")) {
+      setDropdownOpen(false);
+    }
+  }
+}, []);
+
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -35,7 +45,7 @@ export default function Navbar() {
       )}
 
       <div className="z-50 fixed top-0 left-0 right-0 w-full z-48 bg-white dark:bg-gray-900 shadow-md px-4 py-2 ring-1 ring-orange-200 dark:ring-gray-800 text-black dark:text-white transition-colors">
-        <div className="max-w-6xl mx-auto flex items-center justify-between">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
 
        
           <div className="flex items-center">
@@ -47,16 +57,46 @@ export default function Navbar() {
 
           
           <div className="hidden lg:flex items-center space-x-4">
-            <Link to="/" className="font-medium">Home</Link>
-            <a href="https://easyexamacademy.com/blog/" className="font-medium">Blog</a>
-            <Link to="/Resources" className="font-medium">Resources</Link>
-            <a href="https://easyexamacademy.com/contact/" className="font-medium">Contact</a>
+            <Link to="/" className="font-medium kollektif-font">Home</Link>
+            <a href="https://easyexamacademy.com/blog/" className="font-medium kollektif-font">Blog</a>
+            <Link to="/Resources" className="font-medium kollektif-font">Resources</Link>
+            <a href="https://easyexamacademy.com/contact/" className="font-medium kollektif-font">Contact</a>
+
+            <div className="relative">
+              <button onClick={() => setDropdownOpen(!dropdownOpen)} className="font-medium kollektif-font flex items-center space-x-1">
+                <span>Download</span>
+                  <svg className={`w-4 h-4 transform transition-transform ${dropdownOpen ? "rotate-180" : "rotate-0"}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                  </svg>
+              </button>
+
+              {dropdownOpen && (
+                <div className="absolute mt-6 w-48 bg-white dark:bg-gray-900 rounded-md shadow-lg border-2 border-orange-600 z-50">
+                  <a
+                    href="/files/brochure.pdf"
+                    download
+                    className="block px-4 py-2 text-sm text-gray-700 rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    Brochure
+                  </a>
+                  <a
+                    href="/files/attendance-policy.pdf"
+                    download
+                    className="block px-4 py-2 text-sm text-gray-700 rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                  >
+                    Attendance Policy
+                  </a>
+                </div>
+              )}
+
+            </div>
+
           </div>
 
           
           <div className="hidden lg:flex items-center space-x-3">
-            <a href="https://attendance.easyexamacademy.com/" className="text-orange-500 text-sm font-bold border-solid border-2 border-orange-500 rounded-2xl dark:bg-grey-800 py-2 px-4 hover:bg-orange-100 dark:hover:bg-gray-800">Attendance</a>
-            <a href="https://study.easyexamacademy.com/" className="text-sm font-semibold border-solid border-2 border-gray-800 dark:border-white rounded-2xl text-black dark:text-white px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800">Students Login</a>
+            <a href="https://attendance.easyexamacademy.com/" className="text-orange-500 text-sm font-bold border-solid border-2 border-orange-500 rounded-2xl dark:bg-grey-800 py-2 px-4 hover:bg-orange-100 dark:hover:bg-gray-800 kollektif-font">Attendance</a>
+            <a href="https://study.easyexamacademy.com/" className="text-sm font-semibold border-solid border-2 border-gray-800 dark:border-white rounded-2xl text-black dark:text-white px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 kollektif-font">Students Login</a>
 
             
             <button
@@ -94,12 +134,17 @@ export default function Navbar() {
             </svg>
           </button>
 
-          <a href="https://easyexamacademy.com/blog/" className="block font-medium">Blog</a>
-          <Link to="/Resources" className="block font-medium" onClick={() => setIsOpen(false)}>Resources</Link>
-          <a href="https://easyexamacademy.com/contact/" className="block font-medium">Contact</a>
+          <a href="https://easyexamacademy.com/blog/" className="block font-medium kollektif-font">Blog</a>
+          <Link to="/Resources" className="block font-medium kollektif-font" onClick={() => setIsOpen(false)}>Resources</Link>
+          <a href="https://easyexamacademy.com/contact/" className="block font-medium kollektif-font">Contact</a>
           <hr className="border-gray-300 dark:border-gray-600" />
-          <a href="https://attendance.easyexamacademy.com/" className="block text-sm text-gray-900 font-medium rounded-full bg-orange-300 py-2 px-4 text-center">Attendance</a>
-          <a href="https://study.easyexamacademy.com/" className="block text-sm font-semibold rounded-full font-medium dark:bg-white bg-black text-white dark:text-black py-2 px-4 text-center">Students Login</a>
+          <div className=" space-y-2">
+            <a href="#" className="block font-medium kollektif-font text-orange-500">Download Brochure</a>
+            <a href="#" className="block font-medium kollektif-font text-orange-500">Download Attendance Policy</a>
+          </div>
+          <hr className="border-gray-300 dark:border-gray-600" />
+          <a href="https://attendance.easyexamacademy.com/" className="block text-sm text-gray-900 font-medium rounded-full bg-orange-300 py-2 px-4 text-center kollektif-font">Attendance</a>
+          <a href="https://study.easyexamacademy.com/" className="block text-sm font-semibold rounded-full font-medium dark:bg-white bg-black text-white dark:text-black py-2 px-4 text-center kollektif-font">Students Login</a>
 
           
            <button

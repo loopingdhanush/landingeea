@@ -112,7 +112,7 @@ export default function Resources() {
             <h1 className="md:text-5xl text-4xl font-bold mb-0 drop-shadow kollektif-font text-gray-900 dark:text-white">
               Educational Resources
             </h1>
-            <p className="text-base text-gray-500 dark:text-gray-300 mt-2 font-medium">
+            <p className="text-base text-gray-500 dark:text-gray-300 mt-2 font-medium futura-font">
               Explore quality guides, learning tools, and more below.
             </p>
           </div>
@@ -122,13 +122,13 @@ export default function Resources() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {doubtSheets.map(({ title, subjects }, i) => (
             <div key={i} className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-xl">
-              <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">{title}</h2>
+              <h2 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white futura-font">{title}</h2>
               <div className="flex flex-wrap gap-2">
                 {subjects.map(({ name, url }, idx) => (
                   <a
                     key={idx}
                     href={url}
-                    className={`duration-300 ${getColorClasses(name)} hover:text-white hover:border-white py-1 px-6 rounded-md font-semibold`}
+                    className={`duration-300 ${getColorClasses(name)} hover:text-white hover:border-white py-1 px-6 rounded-md font-semibold futura-font`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
