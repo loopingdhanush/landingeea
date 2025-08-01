@@ -41,14 +41,19 @@ export default function Instagram() {
                 <Swiper
                     modules={[Autoplay]}
                     spaceBetween={20}
-                    loop
+                    loop={true}  
+                    speed={2000}
                     breakpoints={{
                         0: { slidesPerView: 1 },
                         640: { slidesPerView: 2 },
                         768: { slidesPerView: 2 },
                         1024: { slidesPerView: 3 },
                     }}
-                    autoplay={{ delay: 3000 }}
+                    autoplay={{
+                        delay: 0,                
+                        disableOnInteraction: false,
+                    }}
+                    
                 >
                     <SwiperSlide><div className="rounded-xl overflow-hidden shadow-lg w-70 mx-auto">
                         <img

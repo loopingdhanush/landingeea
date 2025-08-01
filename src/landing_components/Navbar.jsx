@@ -24,7 +24,13 @@ export default function Navbar() {
       setDropdownOpen(false);
     }
   }
+
+  document.addEventListener("mousedown", handleClickOutside);
+  return () => {
+    document.removeEventListener("mousedown", handleClickOutside);
+  };
 }, []);
+
 
   useEffect(() => {
     if (darkMode) {

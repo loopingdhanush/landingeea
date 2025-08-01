@@ -22,7 +22,7 @@ export default function ResultsShowcase() {
           Our students have consistently delivered excellent academic performance in board exams and entrance tests.
         </p>
         <p className="mt-2 text-xl text-gray-900 dark:text-orange-300 futura-font">
-          Here's a glimpse of our recent achievers <br></br>Join the journey to success!
+          Here's a glimpse of our recent achievers <br></br> Join the Journey to success!
         </p>
       </div>
 
