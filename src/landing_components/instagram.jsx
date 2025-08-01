@@ -20,7 +20,7 @@ export default function Instagram() {
 
             <div className="flex md:flex-row justify-center items-center mb-6 space-x-6 pb-8">
                 <a
-                    href="https://www.instagram.com/eea_founder/"
+                    href="https://www.instagram.com/easyexamacademy_/"
                     
                     className="flex items-center bg-[#E4405F]  text-white rounded-2xl px-3 py-1 shadow-md border-2 border-orange-100"
                 >
@@ -29,7 +29,7 @@ export default function Instagram() {
                 </a>
 
                 <a
-                    href="https://www.youtube.com/@eea_founder"
+                    href="https://www.youtube.com/@EasyExamAcademy"
                     
                     className="flex items-center bg-red-600  text-white rounded-2xl px-3 py-1 shadow-md border-2 border-orange-100"
                 >
