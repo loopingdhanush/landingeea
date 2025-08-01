@@ -18,10 +18,10 @@ export default function ResultsShowcase() {
      
       <div className="lg:w-1/2 text-center lg:text-left">
         <h2 className="text-4xl font-bold text-orange-500 mb-4 kollektif-font">Outstanding Results</h2>
-        <p className="text-lg text-gray-900 dark:text-orange-100 futura-font">
+        <p className="text-xl text-gray-900 dark:text-orange-100 futura-font">
           Our students have consistently delivered excellent academic performance in board exams and entrance tests.
         </p>
-        <p className="mt-2 text-lg font-bold text-gray-900 dark:text-orange-300 futura-font">
+        <p className="mt-2 text-xl text-gray-900 dark:text-orange-300 futura-font">
           Here's a glimpse of our recent achievers <br></br>Join the journey to success!
         </p>
       </div>

@@ -11,7 +11,7 @@ export default function Footer() {
                     <img src={logoFull} alt="Easy Exam Academy Logo" className="w-12 mb-4" />
                     <h1 className="text-white text-2xl font-bold mb-4 kollektif-font">Easy Exam Academy</h1>
                 </div>
-                <p className="text-gray-400 mt-2 ">
+                <p className="text-gray-400 mt-2 futura-font">
                     Easy Exam Academy is a leading online tutoring platform that connects students with expert tutors to enhance learning experiences
                 </p>
             </div>
@@ -30,9 +30,9 @@ export default function Footer() {
             <div>
                 <h3 className="text-white font-semibold mb-3 md:mt-0 mt-3 kollektif-font">Contact</h3>
                 <ul>
-                    <li><p className="text-gray-400">Email : <a href="mailto:admin@easyexamacademy.com" className="hover:underline text-gray-400 hover:text-white">admin@easyexamacademy.com</a></p></li>
-                    <li><p className="text-gray-400">Phone : <a href="tel:+917708568206" className="hover:underline text-gray-400 hover:text-white">+91 77085 68206</a></p></li>
-                    <li><p className="text-gray-400">Location : Erode, Tamil Nadu, India</p></li>
+                    <li><p className="text-gray-400">Email : <a href="mailto:admin@easyexamacademy.com" className="hover:underline text-gray-400 hover:text-white futura-font">admin@easyexamacademy.com</a></p></li>
+                    <li><p className="text-gray-400">Phone : <a href="tel:+917708568206" className="hover:underline text-gray-400 hover:text-white futura-font">+91 77085 68206</a></p></li>
+                    <li><p className="text-gray-400 futura-font">Location : Erode, Tamil Nadu, India</p></li>
                 </ul>
             </div>
 
@@ -40,7 +40,7 @@ export default function Footer() {
 
         </div>
 
-        <div className="mt-10 border-t border-gray-700 pt-6 text-center text-gray-500 text-sm kollektif-font">
+        <div className="mt-10 border-t border-gray-700 pt-6 text-center text-gray-500 kollektif-font">
                 © {new Date().getFullYear()} Thinkverse Technologies Private Limited
         </div>
         
