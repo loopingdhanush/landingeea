@@ -18,25 +18,34 @@ export default function Instagram() {
             <h2 className='text-4xl text-orange-500  font-bold kollektif-font'>Learn with short and powerful Videos</h2>
             <p className='text-gray-900 dark:text-orange-100 mt-4 text-xl mb-12 futura-font'> Follow our founder on Instagram and Youtube for bite-sized educational content, exam tips, and learning strategies that make a real impact.</p>
 
-            <div className="flex md:flex-row justify-center items-center mb-6 space-x-6 pb-8">
+            <div className="flex flex-col md:flex-row justify-center items-center gap-4 mb-8 pb-8">
+                
                 <a
                     href="https://www.instagram.com/easyexamacademy_/"
-                    
-                    className="flex items-center bg-[#E4405F]  text-white rounded-2xl px-3 py-1 shadow-md "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center bg-gradient-to-r from-pink-500 to-pink-600 text-white rounded-2xl px-4 py-2 shadow-lg "
                 >
-                    <img src={instagram} alt="Instagram" className="w-8 h-8 mr-2" />
-                    <span className="futura-font text-md  mr-2">Follow us on Instagram</span>
+                    <img src={instagram} alt="Instagram" className="w-6 h-6 mr-2" />
+                    <span className="futura-font text-sm md:text-base font-semibold">
+                    Follow us on Instagram
+                    </span>
                 </a>
 
                 <a
                     href="https://www.youtube.com/@EasyExamAcademy"
-                    
-                    className="flex items-center bg-red-600 text-white rounded-2xl px-3 py-1 shadow-md "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center bg-gradient-to-r from-red-500 to-red-600 text-white rounded-2xl px-4 py-2 shadow-lg "
                 >
-                    <img src={youtube} alt="YouTube" className="w-8 h-8 mr-2" />
-                    <span className="futura-font text-md  ">Subscribe on YouTube</span>
+                    <img src={youtube} alt="YouTube" className="w-6 h-6 mr-2" />
+                    <span className="futura-font text-sm md:text-base font-semibold">
+                    Subscribe on YouTube
+                    </span>
                 </a>
+
             </div>
+
 
                 <Swiper
                     modules={[Autoplay]}
@@ -44,10 +53,10 @@ export default function Instagram() {
                     loop={true}  
                     speed={2000}
                     breakpoints={{
-                        0: { slidesPerView: 1 },
+                        0: { slidesPerView: 2 },
                         640: { slidesPerView: 2 },
                         768: { slidesPerView: 2 },
-                        1024: { slidesPerView: 3 },
+                        1024: { slidesPerView: 4 },
                     }}
                     autoplay={{
                         delay: 0,                

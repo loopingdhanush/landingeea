@@ -14,7 +14,7 @@ export default function Hero() {
       rounded-b-full blur-2xl pointer-events-none z-0"></div>
 
 
-        <img className="w-20 m-auto mb-10 animate-pulse" src={logoFull}></img>
+        <img className="w-20 m-auto mb-10 animate-pulse" alt="eea logo" src={logoFull}></img>
         <span className=" text-sm text-gray-900 dark:text-orange-100 mb-2 inline-block ">
   Trusted highly by <span className="font-semibold">100+</span> learners and families</span>
 
@@ -29,13 +29,13 @@ export default function Hero() {
         <div className="mt-8"></div>
 
         <div className="flex flex-wrap justify-center gap-4 mt-6">
-  <a href="https://easyexamacademy.com/blog/"><button className="px-5 py-2 text-sm font-semibold text-white bg-orange-500 rounded-full hover:bg-orange-600 transition-colors duration-200 cursor-pointer">
-    Download Brochure
-  </button></a>
-  <a href="https://easyexamacademy.com/contact/"><button className="px-5 py-2 text-sm font-semibold text-orange-500 border-2 border-orange-500 rounded-full hover:bg-orange-100 transition-colors duration-200 cursor-pointer">
-    Contact Us
-  </button></a>
-</div>
+          <a href="https://easyexamacademy.com/blog/"><button className="px-5 py-2 text-sm font-semibold text-white bg-orange-500 rounded-full hover:bg-orange-600 transition-colors duration-200 cursor-pointer">
+            Download Brochure
+          </button></a>
+          <a href="https://easyexamacademy.com/contact/"><button className="px-5 py-2 text-sm font-semibold text-orange-500 border-2 border-orange-500 rounded-full hover:bg-orange-100 transition-colors duration-200 cursor-pointer">
+            Contact Us
+          </button></a>
+        </div>
 
 
 

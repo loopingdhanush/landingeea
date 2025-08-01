@@ -31,8 +31,8 @@ export default function Course(){
             Our courses are designed to help students excel in their academic pursuits. From <span className="650">board exams to competitive entrance tests,</span> our courses are tailored to meet the diverse needs of students</p>
 
             <div className="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
-                {courseinfo.map((course) =>(
-                    <div className="bg-orange-100 dark:bg-gray-900 border-2 border-orange-400 p-6 rounded-3xl shadow-lg">
+                {courseinfo.map((course,index) =>(
+                    <div key={index} className="bg-orange-100 dark:bg-gray-900 border-2 border-orange-400 p-6 rounded-3xl shadow-lg">
                         
                         <img src={course.icon} alt="Book Icon" className="w-16 h-16 mx-auto mb-4"/>
                         <h3 className="text-2xl text-orange-500 font-bold text-center mb-4 kollektif-font">{course.title}</h3>
