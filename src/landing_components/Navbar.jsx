@@ -79,14 +79,14 @@ export default function Navbar() {
               {dropdownOpen && (
                 <div className="absolute mt-6 w-48 bg-white dark:bg-gray-900 rounded-md shadow-lg border-2 border-orange-600 z-50">
                   <a
-                    href="/files/brochure.pdf"
+                    href="https://drive.google.com/file/d/1pJHxVdQpo-JXanOiTGfpKbFOmNSaHveG/view?usp=drive_link"
                     download
                     className="block px-4 py-2 text-sm text-gray-700 rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
                   >
                     Brochure
                   </a>
                   <a
-                    href="/files/attendance-policy.pdf"
+                    href="https://drive.google.com/file/d/1aFQ_KDCDqC9XcB9eevEcwpD3fTgiiKtW/view?usp=sharing"
                     download
                     className="block px-4 py-2 text-sm text-gray-700 rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
                   >
@@ -145,8 +145,8 @@ export default function Navbar() {
           <a href="https://easyexamacademy.com/contact/" className="block font-medium kollektif-font">Contact</a>
           <hr className="border-gray-300 dark:border-gray-600" />
           <div className=" space-y-2">
-            <a href="#" className="block font-medium kollektif-font text-orange-500">Download Brochure</a>
-            <a href="#" className="block font-medium kollektif-font text-orange-500">Download Attendance Policy</a>
+            <a href="https://drive.google.com/file/d/1pJHxVdQpo-JXanOiTGfpKbFOmNSaHveG/view?usp=drive_link" className="block font-medium kollektif-font text-orange-500">Download Brochure</a>
+            <a href="https://drive.google.com/file/d/1aFQ_KDCDqC9XcB9eevEcwpD3fTgiiKtW/view?usp=drive_link" className="block font-medium kollektif-font text-orange-500">Download Attendance Policy</a>
           </div>
           <hr className="border-gray-300 dark:border-gray-600" />
           <a href="https://attendance.easyexamacademy.com/" className="block text-sm text-gray-900 font-medium rounded-full bg-orange-300 py-2 px-4 text-center kollektif-font">Attendance</a>
