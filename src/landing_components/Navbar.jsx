@@ -64,9 +64,8 @@ export default function Navbar() {
           
           <div className="hidden lg:flex items-center space-x-4">
             <Link to="/" className="font-medium kollektif-font">Home</Link>
-            <a href="https://easyexamacademy.com/blog/" className="font-medium kollektif-font">Blog</a>
             <Link to="/Resources" className="font-medium kollektif-font">Resources</Link>
-            <a href="https://easyexamacademy.com/contact/" className="font-medium kollektif-font">Contact</a>
+            <Link to="/contact" className="font-medium kollektif-font">Contact</Link>
 
             <div className="relative">
               <button onClick={() => setDropdownOpen(!dropdownOpen)} className="font-medium kollektif-font flex items-center space-x-1">
@@ -140,9 +139,10 @@ export default function Navbar() {
             </svg>
           </button>
 
-          <a href="https://easyexamacademy.com/blog/" className="block font-medium kollektif-font">Blog</a>
+          
+          <Link to="/" className="block font-medium kollektif-font" onClick={() => setIsOpen(false)}>Home</Link>
           <Link to="/Resources" className="block font-medium kollektif-font" onClick={() => setIsOpen(false)}>Resources</Link>
-          <a href="https://easyexamacademy.com/contact/" className="block font-medium kollektif-font">Contact</a>
+          <Link to="/contact" className="block font-medium kollektif-font" onClick={() => setIsOpen(false)}>Contact</Link>
           <hr className="border-gray-300 dark:border-gray-600" />
           <div className=" space-y-2">
             <a href="https://drive.google.com/file/d/1pJHxVdQpo-JXanOiTGfpKbFOmNSaHveG/view?usp=drive_link" className="block font-medium kollektif-font text-orange-500">Download Brochure</a>

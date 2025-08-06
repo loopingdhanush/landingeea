@@ -2,6 +2,9 @@ import React from 'react';
 import v1 from '../assets/gif1.gif'
 import v2 from '../assets/gif2.gif'
 import v3 from '../assets/gif3.gif'
+import v4 from '../assets/gif4.gif'
+import v5 from '../assets/gif5.gif'
+import v6 from '../assets/gif6.gif'
 
 import instagram from '../assets/instagram.svg'
 import youtube from '../assets/youtube.svg';
@@ -87,6 +90,14 @@ export default function Instagram() {
 
                     <SwiperSlide><div className="rounded-xl overflow-hidden shadow-lg w-70 mx-auto">
                         <img
+                            src={v3}
+                            alt="Educational Reel Preview"
+                            className="w-full h-auto"/>
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide><div className="rounded-xl overflow-hidden shadow-lg w-70 mx-auto">
+                        <img
                             src={v2}
                             alt="Educational Reel Preview"
                             className="w-full h-auto"/>
@@ -95,7 +106,7 @@ export default function Instagram() {
 
                     <SwiperSlide><div className="rounded-xl overflow-hidden shadow-lg w-70 mx-auto">
                         <img
-                            src={v3}
+                            src={v5}
                             alt="Educational Reel Preview"
                             className="w-full h-auto"/>
                         </div>
@@ -103,7 +114,7 @@ export default function Instagram() {
 
                     <SwiperSlide><div className="rounded-xl overflow-hidden shadow-lg w-70 mx-auto">
                         <img
-                            src={v1}
+                            src={v6}
                             alt="Educational Reel Preview"
                             className="w-full h-auto"/>
                         </div>
@@ -111,7 +122,7 @@ export default function Instagram() {
 
                     <SwiperSlide><div className="rounded-xl overflow-hidden shadow-lg w-70 mx-auto">
                         <img
-                            src={v3}
+                            src={v4}
                             alt="Educational Reel Preview"
                             className="w-full h-auto"/>
                         </div>
@@ -119,7 +130,24 @@ export default function Instagram() {
                     
                 </Swiper>
 
+                <div className="max-w-5xl mx-auto py-12 pt-40">
+                    <div className="rounded-lg shadow-lg">
+                        <iframe
+                        className="w-full h-64 md:h-96 rounded-lg"
+                        src="https://www.youtube.com/embed/kldX6toZJwk"
+                        title="Explore the Features of Our Website: Online Sessions, Notes &amp; More"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
+
+
         </div>
+
+        
         </section>
     )
 }
