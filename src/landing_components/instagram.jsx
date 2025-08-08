@@ -17,7 +17,7 @@ import "swiper/css/navigation";
 
 export default function Instagram() {
     return(
-        <section className='mt-10'> 
+        <section className='md:mt-40 md:mb-40 mt-10 mb-10'> 
         <div className='max-w-5xl mx-auto px-6 py-12 text-center'>
             <h2 className='text-4xl text-orange-500  font-bold kollektif-font'>Learn with short and powerful Videos</h2>
             <p className='text-gray-900 dark:text-orange-100 mt-4 text-xl mb-12 futura-font'> Follow our founder on Instagram and Youtube for bite-sized educational content, exam tips, and learning strategies that make a real impact.</p>
@@ -28,7 +28,7 @@ export default function Instagram() {
                     href="https://www.instagram.com/easyexamacademy_/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center bg-gradient-to-r from-pink-500 to-pink-600 text-white rounded-2xl px-4 py-2 shadow-lg "
+                    className=" flex items-center bg-gradient-to-r from-pink-500 to-pink-600 text-white rounded-2xl px-4 py-2 shadow-lg "
                 >
                     <img src={instagram} alt="Instagram" className="w-6 h-6 mr-2" />
                     <span className="futura-font text-sm md:text-base font-semibold">
@@ -52,7 +52,7 @@ export default function Instagram() {
                     href="https://www.facebook.com/p/Easy-Exam-Academy-61569184779655/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-2xl px-4 py-2 shadow-lg "
+                    className=" flex items-center bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-2xl px-4 py-2 shadow-lg "
                 >
                     <img src={facebook} alt="YouTube" className="w-6 h-6 mr-2" />
                     <span className="futura-font text-sm md:text-base font-semibold">
@@ -61,6 +61,20 @@ export default function Instagram() {
                 </a>
 
             </div>
+
+            <div className="max-w-5xl mx-auto pb-12 ">
+                    <div className="rounded-lg shadow-lg">
+                        <iframe
+                        className="w-full h-64 md:h-96 rounded-lg"
+                        src="https://www.youtube.com/embed/kldX6toZJwk"
+                        title="Explore the Features of Our Website: Online Sessions, Notes &amp; More"
+                        frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerPolicy="strict-origin-when-cross-origin"
+                        allowFullScreen
+                        ></iframe>
+                    </div>
+                </div>
 
 
                 <Swiper
@@ -130,19 +144,7 @@ export default function Instagram() {
                     
                 </Swiper>
 
-                <div className="max-w-5xl mx-auto py-12 pt-40">
-                    <div className="rounded-lg shadow-lg">
-                        <iframe
-                        className="w-full h-64 md:h-96 rounded-lg"
-                        src="https://www.youtube.com/embed/kldX6toZJwk"
-                        title="Explore the Features of Our Website: Online Sessions, Notes &amp; More"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerPolicy="strict-origin-when-cross-origin"
-                        allowFullScreen
-                        ></iframe>
-                    </div>
-                </div>
+                
 
 
         </div>

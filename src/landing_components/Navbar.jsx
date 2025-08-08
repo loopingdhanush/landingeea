@@ -54,14 +54,26 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
 
        
-          <div className="flex items-center">
+          <div className="flex items-center  space-x-2">
             <a href="/">
-              <img src={logoFull} className="h-10 rounded-full pr-2" alt="Logo" />
+              <img
+                src={logoFull}
+                className="h-10 rounded-full"
+                alt="Logo"
+              />
             </a>
-            <h1 className="ml-1 text-gray-900 dark:text-white kollektif-font text-md md:text-xl font-bold">Easy Exam Academy</h1>
+            <div className="flex flex-col items-start">
+              <h1 className="text-gray-900 dark:text-white kollektif-font text-md md:text-xl font-bold leading-none">
+                Easy Exam Academy
+              </h1>
+              <p className="text-orange-400 md:text-[9.2px] text-[7.5px] kollectif-font font-bold leading-none md:pb-1">
+                Empowering Young Minds, Inspiring Futures!
+              </p>
+            </div>
           </div>
 
-          
+
+
           <div className="hidden lg:flex items-center space-x-4">
             <Link to="/" className="font-medium kollektif-font">Home</Link>
             <Link to="/Resources" className="font-medium kollektif-font">Resources</Link>
@@ -100,8 +112,8 @@ export default function Navbar() {
 
           
           <div className="hidden lg:flex items-center space-x-3">
-            <a href="https://attendance.easyexamacademy.com/" className="text-orange-500 text-sm font-bold border-solid border-2 border-orange-500 rounded-2xl dark:bg-grey-800 py-2 px-4 hover:bg-orange-100 dark:hover:bg-gray-800 kollektif-font">Attendance</a>
-            <a href="https://study.easyexamacademy.com/" className="text-sm font-semibold border-solid border-2 border-gray-800 dark:border-white rounded-2xl text-black dark:text-white px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 kollektif-font">Students Login</a>
+            <a href="https://attendance.easyexamacademy.com/" className="w-32 text-center text-orange-500 text-sm font-bold border-solid border-2 border-orange-500 rounded-2xl dark:bg-grey-800 py-2 px-4 hover:bg-orange-100 dark:hover:bg-gray-800 kollektif-font">Attendance</a>
+            <a href="https://study.easyexamacademy.com/" className="w-36 text-center text-sm font-semibold border-solid border-2 border-gray-800 dark:border-white rounded-2xl text-black dark:text-white px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 kollektif-font">Students Login</a>
 
             
             <button

@@ -6,12 +6,25 @@ export default function Footer() {
 
         <div className="grid lg:grid-cols-2 grid-cols-1 max-w-6xl mx-auto md:gap-x-8 ">
 
-            <div className="lg:text-left mb-8 lg:mb-0">
-                <div className="flex flex-col">
-                    <img src={logoFull} alt="Easy Exam Academy Logo" className="w-12 mb-4" />
-                    <h1 className="text-white text-2xl font-bold mb-4 kollektif-font">Easy Exam Academy</h1>
-                </div>
-                <p className="text-gray-400 mt-2 futura-font">
+            <div className="lg:text-left mb-2 lg:mb-0">
+                <div className="flex items-center  space-x-2">
+                            <a href="/">
+                              <img
+                                src={logoFull}
+                                className="h-10 rounded-full"
+                                alt="Logo"
+                              />
+                            </a>
+                            <div className="flex flex-col items-start">
+                              <h1 className="text-white kollektif-font text-md md:text-xl font-bold leading-none">
+                                Easy Exam Academy
+                              </h1>
+                              <p className="text-orange-400 md:text-[9.2px] text-[7.5px] kollectif-font font-bold leading-none md:pb-1">
+                                Empowering Young Minds, Inspiring Futures!
+                              </p>
+                            </div>
+                          </div>
+                <p className="text-gray-400 mt-2 futura-font max-w-md">
                     Easy Exam Academy is a leading online tutoring platform that connects students with expert tutors to enhance learning experiences
                 </p>
             </div>
