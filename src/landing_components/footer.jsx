@@ -19,7 +19,7 @@ export default function Footer() {
                               <h1 className="text-white kollektif-font text-md md:text-xl font-bold leading-none">
                                 Easy Exam Academy
                               </h1>
-                              <p className="text-orange-400 md:text-[9.2px] text-[7.5px] kollectif-font font-bold leading-none md:pb-1">
+                              <p className="text-orange-400 md:text-[9.2px] text-[7.5px] kollectif-font font-bold leading-none md:pb-1 md:pt-0 pt-1">
                                 Empowering Young Minds, Inspiring Futures!
                               </p>
                             </div>
