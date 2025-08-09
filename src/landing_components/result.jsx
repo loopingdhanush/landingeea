@@ -13,11 +13,11 @@ const instagramResults = [
 
 export default function ResultsShowcase() {
   return (
-    <div className="max-w-6xl mx-auto px-6 py-12 flex flex-col lg:flex-row items-center gap-10 md:mt-20 md:mb-20 mt-10 mb-10">
+    <div className="max-w-6xl mx-auto px-6 py-12 flex flex-col lg:flex-row items-center gap-10 md:mt-20 md:mb-10 mt-10 mb-10">
       
      
       <div className="lg:w-1/2 text-center lg:text-left">
-        <h2 className="text-4xl font-bold text-orange-500 mb-4 kollektif-font">Outstanding Results</h2>
+        <h2 className="text-5xl font-bold text-orange-500 mb-4 kollektif-font">Outstanding Results</h2>
         <p className="text-xl text-gray-900 dark:text-orange-100 futura-font">
           Our students have consistently delivered excellent academic performance in board exams and entrance tests.
         </p>

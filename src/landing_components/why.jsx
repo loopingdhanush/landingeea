@@ -7,7 +7,7 @@ export default function Why() {
     return(
     <section>
             <div className="max-w-6xl mx-auto px-6 py-12 text-center md:mt-20 md:mb-20 mt-10 mb-10">
-            <h2 className="kollektif-font text-4xl font-bold text-orange-500 text-center max-w-2xl mx-auto">
+            <h2 className="kollektif-font text-5xl font-bold text-orange-500 text-center max-w-2xl mx-auto">
                 Explore Our Complete Learning Ecosystem
             </h2>
             <p className="text-xl text-gray-900 dark:text-orange-100 text-center max-w-3xl mx-auto mt-8 mb-16 md:mb-32 futura-font">

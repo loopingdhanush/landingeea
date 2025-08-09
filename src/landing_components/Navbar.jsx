@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import logoFull from "../assets/logo_full.png";
-import logoFont from "../assets/logo_font.png";
 import { Link } from "react-router-dom";
 
 import lighticon from "../assets/lightmode.svg"

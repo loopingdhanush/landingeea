@@ -8,9 +8,9 @@ import flyers from "../assets/flyers.svg";
 import neet from "../assets/neet.svg";
 import bmp from "../assets/bmp.svg";
 import crash from "../assets/crash.svg";
-
 import bootcamp from "../assets/bootcamp.svg";
 import prime from "../assets/prime.svg";
+import college from "../assets/college.svg";
 
 const courseinfo = [
     {
@@ -49,10 +49,16 @@ const courseinfo = [
         icon: bmp,
     },
     {
+        title: "Engineering / College Subjects",
+        description: "Focused guidance in core college level topics to boost understanding, grades, and career readiness",
+        icon: college,
+    },
+    {
         title: "Prime",
         description: "One-on-one sessions for individual academic guidance.",
         icon: prime,
     },
+    
     
 ];
 
@@ -60,7 +66,7 @@ export default function Course(){
     return (
     <section>
         <div className="mx-4 md:mt-20 md:mb-20 mt-10 mb-10">
-        <h2 className=" kollektif-font text-4xl font-bold text-orange-500 text-center max-w-2xl mx-auto">Our Courses</h2>
+        <h2 className=" kollektif-font text-5xl font-bold text-orange-500 text-center max-w-2xl mx-auto">Our Courses</h2>
         <p className="text-xl text-gray-900 dark:text-orange-100 text-center max-w-3xl mx-auto mt-8 mb-8 futura-font">
             Our courses are designed to help students excel in their academic pursuits. From <span className="650">board exams to competitive entrance tests,</span> our courses are tailored to meet the diverse needs of students</p>
 
