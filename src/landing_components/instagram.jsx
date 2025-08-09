@@ -17,7 +17,7 @@ import "swiper/css/navigation";
 
 export default function Instagram() {
     return(
-        <section className='md:mt-40 md:mb-40 mt-10 mb-10'> 
+        <section className='md:mt-20 md:mb-20 mt-10 mb-10'> 
         <div className='max-w-5xl mx-auto px-6 py-12 text-center'>
             <h2 className='text-4xl text-orange-500  font-bold kollektif-font'>Learn with short and powerful Videos</h2>
             <p className='text-gray-900 dark:text-orange-100 mt-4 text-xl mb-12 futura-font'> Follow our founder on Instagram and Youtube for bite-sized educational content, exam tips, and learning strategies that make a real impact.</p>
