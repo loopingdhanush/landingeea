@@ -3,7 +3,7 @@ import React from "react";
 
 
 import sprinters from "../assets/sprinters.svg";
-import movers from "../assets/Movers.svg";
+import movers from "../assets/movers.svg";
 import flyers from "../assets/flyers.svg";
 import neet from "../assets/neet.svg";
 import bmp from "../assets/bmp.svg";
