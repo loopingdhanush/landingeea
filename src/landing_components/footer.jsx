@@ -34,9 +34,9 @@ export default function Footer() {
             <div className="space-y-1 ">
                 <h3 className="text-white font-semibold mb-3 md:mt-0 mt-3 kollektif-font">Important Links</h3>
                 <ul>
-                <li><a href="https://easyexamacademy.com/privacy-policy/" className="text-gray-400 hover:text-white transition-colors duration-200 futura-font">Privacy Policy</a></li>
-                <li><a href="https://easyexamacademy.com/terms-conditions/" className="text-gray-400 hover:text-white transition-colors duration-200 futura-font">Terms Conditions</a></li>
-                <li><a href="https://easyexamacademy.com/refund_returns/" className="text-gray-400 hover:text-white transition-colors duration-200 futura-font">Refund Returns</a></li>
+                <li><a href="https://drive.google.com/file/d/1pJHxVdQpo-JXanOiTGfpKbFOmNSaHveG/view?usp=drive_link" className="text-gray-400 hover:text-white transition-colors duration-200 futura-font">Brochure</a></li>
+                <li><a href="https://drive.google.com/file/d/1u613YeBebKnWPXJFBjpdcioZoqGokjTW/view?usp=drive_link" className="text-gray-400 hover:text-white transition-colors duration-200 futura-font">Terms Conditions</a></li>
+                <li><a href="https://drive.google.com/file/d/1aFQ_KDCDqC9XcB9eevEcwpD3fTgiiKtW/view?usp=sharing" className="text-gray-400 hover:text-white transition-colors duration-200 futura-font">Attendance Policy</a></li>
                 </ul>
             </div>
 
