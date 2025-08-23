@@ -93,6 +93,7 @@ export default function Navbar() {
                     href="https://drive.google.com/file/d/1pJHxVdQpo-JXanOiTGfpKbFOmNSaHveG/view?usp=drive_link"
                     download
                     className="block px-4 py-2 text-sm text-gray-700 rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    target="_blank" rel="noopener noreferrer"
                   >
                     Brochure
                   </a>
@@ -100,6 +101,7 @@ export default function Navbar() {
                     href="https://drive.google.com/file/d/1aFQ_KDCDqC9XcB9eevEcwpD3fTgiiKtW/view?usp=sharing"
                     download
                     className="block px-4 py-2 text-sm text-gray-700 rounded-md dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                    target="_blank" rel="noopener noreferrer"
                   >
                     Attendance Policy
                   </a>
@@ -112,8 +114,8 @@ export default function Navbar() {
 
           
           <div className="hidden lg:flex items-center space-x-3">
-            <a href="https://attendance.easyexamacademy.com/" className="w-32 text-center text-orange-500 text-sm font-bold border-solid border-2 border-orange-500 rounded-2xl dark:bg-grey-800 py-2 px-4 hover:bg-orange-100 dark:hover:bg-gray-800 kollektif-font">Attendance</a>
-            <a href="https://study.easyexamacademy.com/" className="w-36 text-center text-sm font-semibold border-solid border-2 border-gray-800 dark:border-white rounded-2xl text-black dark:text-white px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 kollektif-font">Students Login</a>
+            <a href="https://attendance.easyexamacademy.com/" target="_blank" rel="noopener noreferrer" className="w-32 text-center text-orange-500 text-sm font-bold border-solid border-2 border-orange-500 rounded-2xl dark:bg-grey-800 py-2 px-4 hover:bg-orange-100 dark:hover:bg-gray-800 kollektif-font">Attendance</a>
+            <a href="https://study.easyexamacademy.com/" target="_blank" rel="noopener noreferrer" className="w-36 text-center text-sm font-semibold border-solid border-2 border-gray-800 dark:border-white rounded-2xl text-black dark:text-white px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 kollektif-font">Students Login</a>
 
             
             <button
@@ -157,12 +159,12 @@ export default function Navbar() {
           <Link to="/contact" className="block font-medium kollektif-font" onClick={() => setIsOpen(false)}>Contact</Link>
           <hr className="border-gray-300 dark:border-gray-600" />
           <div className=" space-y-2">
-            <a href="https://drive.google.com/file/d/1pJHxVdQpo-JXanOiTGfpKbFOmNSaHveG/view?usp=drive_link" className="block font-medium kollektif-font text-orange-500">Download Brochure</a>
-            <a href="https://drive.google.com/file/d/1aFQ_KDCDqC9XcB9eevEcwpD3fTgiiKtW/view?usp=drive_link" className="block font-medium kollektif-font text-orange-500">Download Attendance Policy</a>
+            <a href="https://drive.google.com/file/d/1pJHxVdQpo-JXanOiTGfpKbFOmNSaHveG/view?usp=drive_link" className="block font-medium kollektif-font text-orange-500" target="_blank" rel="noopener noreferrer" >Download Brochure</a>
+            <a href="https://drive.google.com/file/d/1aFQ_KDCDqC9XcB9eevEcwpD3fTgiiKtW/view?usp=drive_link" className="block font-medium kollektif-font text-orange-500" target="_blank" rel="noopener noreferrer">Download Attendance Policy</a>
           </div>
           <hr className="border-gray-300 dark:border-gray-600" />
-          <a href="https://attendance.easyexamacademy.com/" className="block text-sm text-gray-900 font-medium rounded-full bg-orange-300 py-2 px-4 text-center kollektif-font">Attendance</a>
-          <a href="https://study.easyexamacademy.com/" className="block text-sm font-semibold rounded-full font-medium dark:bg-white bg-black text-white dark:text-black py-2 px-4 text-center kollektif-font">Students Login</a>
+          <a href="https://attendance.easyexamacademy.com/" target="_blank" rel="noopener noreferrer" className="block text-sm text-gray-900 font-medium rounded-full bg-orange-300 py-2 px-4 text-center kollektif-font">Attendance</a>
+          <a href="https://study.easyexamacademy.com/" target="_blank" rel="noopener noreferrer" className="block text-sm font-semibold rounded-full font-medium dark:bg-white bg-black text-white dark:text-black py-2 px-4 text-center kollektif-font">Students Login</a>
 
           
            <button

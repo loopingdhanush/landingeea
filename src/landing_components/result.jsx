@@ -4,11 +4,14 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
+import res1 from "../assets/10math.jpg"
+import res2 from "../assets/10sci.jpg"
+import res3 from "../assets/12physics.jpg"
+
 const instagramResults = [
-  "https://easyexamacademy.com/wp-content/uploads/2025/05/1.png",
-  "https://easyexamacademy.com/wp-content/uploads/2025/05/2.png",
-  "https://easyexamacademy.com/wp-content/uploads/2025/05/3.png",
-  "https://easyexamacademy.com/wp-content/uploads/2025/05/4.png",
+  res1,
+  res2,
+  res3
 ];
 
 export default function ResultsShowcase() {
@@ -17,7 +20,7 @@ export default function ResultsShowcase() {
       
      
       <div className="lg:w-1/2 text-center lg:text-left">
-        <h2 className="text-5xl font-bold text-orange-500 mb-4 kollektif-font">Outstanding Results</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-orange-500 mb-4 kollektif-font">Outstanding Results</h2>
         <p className="text-xl text-gray-900 dark:text-orange-100 futura-font">
           Our students have consistently delivered excellent academic performance in board exams and entrance tests.
         </p>
